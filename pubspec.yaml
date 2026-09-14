@@ -1,0 +1,44 @@
+name: riskmap_final
+description: "RiskMap — Bulgaria forest fire monitoring app."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Map rendering with OpenStreetMap tiles (no API key / billing needed)
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+
+  # HTTP calls to NASA FIRMS API
+  http: ^1.2.2
+
+  # CSV parsing (FIRMS returns CSV)
+  csv: ^6.0.0
+
+  # Charts for the dashboard
+  fl_chart: ^0.69.0
+
+  # Simple state management
+  provider: ^6.1.2
+
+  # Local caching so the app still shows data offline / after a failed fetch
+  shared_preferences: ^2.3.2
+
+  # Nicer date formatting
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
